@@ -1,0 +1,36 @@
+select.selectbox-TLM {
+  box-sizing: border-box;
+  padding: 0.8rem 1rem 0.7rem 1rem;
+  /*padding-bottom: 0.7rem;
+  padding-top: 0.8rem;*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: solid 0.1rem #000000;
+  border-radius: 1rem;
+  position: relative;
+
+  background-image: url("@/assets/images/triangle-small-down-1.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: 90%;
+  background-position-y: 20px;
+}
+select.selectbox-TLM:after {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 1em;
+  background-image: url("@/assets/images/triangle-small-down-1.png");
+  content: "";
+  background-size: 15px;
+}
+
+.filters-content {
+  width: 30%;
+  height: 65%;
+  position: relative;
+  border: solid 0.1rem #84d95e;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}

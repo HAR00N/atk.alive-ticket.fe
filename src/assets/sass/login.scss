@@ -1,0 +1,24 @@
+.login-box {
+  max-width: 1400px !important;
+  width: 40%;
+  position: relative;
+  border: solid 0.2rem #84d95e;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  margin: 50px auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: block;
+}
+.login-box .text-field {
+  width: 50%;
+  margin: 0 auto;
+}
+.login-box .button-field {
+  width: 50%;
+  margin: 0 auto;
+}
+.login-box .end-content {
+  margin-top: 5rem;
+}

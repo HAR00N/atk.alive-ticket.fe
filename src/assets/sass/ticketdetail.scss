@@ -1,0 +1,355 @@
+input {
+  border: none;
+}
+.tickets-detail {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   background-color: #ffffff;
+ }
+.tickets-detail {
+  box-sizing: border-box;
+  padding-bottom: 8.4rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.tickets-detail .auto-group {
+  margin: 0rem 8rem 0rem 9.2rem;
+  box-sizing: border-box;
+  padding: 1.6rem 3.6rem 4.1rem 2rem;
+  width: calc(100% - 17.2rem);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.0700000003);
+  background-color: #ffffff;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.tickets-detail .auto-group .main-contents {
+  margin-bottom: 5.8rem;
+  width: 51.1rem;
+  flex-shrink: 0;
+}
+.user-content-area {
+  margin: 0rem 14.7rem 2.1rem 0rem;
+  width: calc(100% - 14.7rem);
+  height: 3.1rem;
+  display: flex;
+  align-items: center;
+}
+.user-content-area .user-info {
+  box-sizing: border-box;
+  padding: 0.3rem 1.4rem 0.1rem 0rem;
+  height: 100%;
+  display: flex;
+  column-gap: 0.7rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+.user-content-area .user-info .user-pic {
+  width: 2.7rem;
+  height: 2.7rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.user-content-area .user-info .user-title {
+  margin-bottom: 0.1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.user-content-area .user-info .upload-time {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #6e6f6e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.user-content-area .status-button {
+  width: 8.2rem;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #5db933;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.2rem #84d95e;
+  box-sizing: border-box;
+  background-color: #eff8f0;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.tickets-detail .auto-group .main-contents .contents {
+  margin: 0rem 0rem 3rem 1.4rem;
+  max-width: 49.7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+}
+.attached {
+  width: 20.6rem;
+}
+.attached .attachment-count {
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #817a7a;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.attached .attachment-area {
+  margin-left: 0.5rem;
+  width: calc(100% - 0.5rem);
+  display: flex;
+  align-items: center;
+}
+.attached .attachment-area .attachment-icon {
+  margin-right: 1.1rem;
+  width: 2.5rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.attached .attachment-area .attachment-name {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tickets-detail .auto-group .replyer-contents {
+  margin: 0rem 0rem 5.8rem 6.8rem;
+  width: calc(100% - 6.8rem);
+  height: 24.1rem;
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.tickets-detail .auto-group .replyer-contents .reply-box {
+  margin-right: 0.0198rem;
+  width: 80rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.tickets-detail .auto-group .replyer-contents .reply-box .box-hxd {
+  width: 80rem;
+  height: 24.1rem;
+  scale: 105%;
+  position: absolute;
+  left: -1rem;
+  top: -0.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.tickets-detail .auto-group .replyer-contents .reply-box .reported-title {
+  width: 14.1rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 17.7rem;
+  top: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #6e6f6e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.tickets-detail .auto-group .replyer-contents .reply-box .repoerted-target {
+  width: 14.6rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 2rem;
+  top: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.replyer-contents .reply-box .reply-attatched {
+  width: 20.4rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 2rem;
+  top: 17rem;
+}
+.replyer-contents .reply-box .reply-attatched .attachment-count {
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #817a7a;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.replyer-contents .reply-box .reply-attatched .attachment-area {
+  margin-left: 0.5rem;
+  width: calc(100% - 0.5rem);
+  display: flex;
+  align-items: center;
+}
+.replyer-contents .reply-box .reply-attatched .attachment-area .attachment-icon {
+  margin-right: 1.1rem;
+  width: 2.5rem;
+  height: 3.2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.replyer-contents .reply-box .reply-attatched .attachment-area .attachment-name {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tickets-detail .auto-group .replyer-contents .reply-box .contents {
+  width: 49.7rem;
+  height: 8.8rem;
+  position: absolute;
+  left: 3rem;
+  top: 6.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+}
+.replyer-contents .reply-user {
+  margin-top: 2.1rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+  transform: translateX(50%);
+}
+.insert-form {
+  margin: 0rem 6.3rem 4.9rem 0rem;
+  width: calc(100% - 6.3rem);
+  height: 15.1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.insert-form .user-4pR {
+  margin-top: 1.3rem;
+  width: 2.7rem;
+  height: 2.7rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.insert-form .test-editor-area {
+  width: 88.2rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.insert-form .test-editor-area .polygon-2-MoX {
+  width: 5.305rem;
+  height: 5.4325rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.insert-form .test-editor-area .rectangle-15-WAd {
+  width: 85.2rem;
+  height: 14.7rem;
+  position: absolute;
+  left: 1rem;
+  top: 0.4rem;
+  border: solid 0.1rem #786f6f;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.tickets-detail .auto-group .insert-form .test-editor-area .text-editor-QWu {
+  width: 13.8rem;
+  height: 3.2rem;
+  position: absolute;
+  left: 39.8rem;
+  top: 6.2rem;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.button-area {
+  margin: 0rem 73.3rem 0rem 5.4rem;
+  width: calc(100% - 78.7rem);
+  height: 4.1rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.button-area .list-btn {
+  margin-right: 0.9rem;
+  width: 8.8rem;
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #ffffff;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #84d95e;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+.button-area .cancel-btn {
+  width: 8.8rem;
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: #84d95e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.1rem #84d95e;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}

@@ -1,0 +1,48 @@
+.mypage-box {
+  width: 100%;
+  position: relative;
+  border: solid 0.2rem #84d95e;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+.mypage-box .mypage-box-inner {
+  margin : 1.5rem 1rem 1.5rem;
+  display: block;
+}
+.mypage-box .mypage-box-inner .copr-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.2125;
+
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.mypage-box .mypage-box-inner .mypage-content {
+  margin : 1.5rem 1rem 1.5rem;
+  display: block;
+}
+.mypage-box .mypage-box-inner .mypage-content .mypage-content-inner {
+  margin-top : 2rem;
+  margin-bottom: 2rem;
+}
+.mypage-box .mypage-box-inner .mypage-content .content-font {
+  font-size: 1.3rem;
+  line-height: 1.2125;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.mypage-box .mypage-box-inner .mypage-content .content-date {
+  font-size: 1.1rem;
+  line-height: 1.2125;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 3px 10px 3px;
+}
+.mypage-box .mypage-box-inner .mypage-content .content-name {
+  font-size: 1.1rem;
+  line-height: 1.2125;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0px 10px 3px;
+}
+

@@ -1,0 +1,74 @@
+.content-inner {
+  margin : 1rem;
+}
+.content-inner .title-font {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.2125;
+
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.content-inner .inner-input {
+  margin : 2rem;
+  display: flex;
+}
+
+.content-inner .inner-input .next-button {
+  margin-left: 15px;
+}
+.terms-area {
+  margin : 1rem 1.5rem 1rem;
+}
+.inner-scroll {
+  border: solid 0.2rem #000000;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  height : 100px;
+  width : 80%;
+  margin: 0 auto;
+}
+.last-button {
+  margin-top: 50px !important;
+  margin: 0 auto;
+  width : 70%;
+}
+
+.last-outer-content {
+  margin : 10px 15px 10px;
+}
+.last-outer-content .content-box {
+  min-width: 500px;
+  border: solid 0.2rem #000000;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: block;
+}
+.last-outer-content .content-box .content-inner {
+  margin : 0 50px;
+}
+
+.last-outer-content .content-box .content-inner .text-area {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+}
+
+.last-outer-content .content-box .content-inner .text-area .title-font{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.last-outer-content .content-box .content-inner .text-area .con-font{
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.last-outer-content .content-box .content-inner .middel-bar {
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+}

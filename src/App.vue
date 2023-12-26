@@ -15,3 +15,4 @@ export default {
 <style lang="scss">
 @import "@/assets/sass/default.scss";
 </style>
+

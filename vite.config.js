@@ -19,6 +19,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  optimizeDeps: {
+    exclude: ["vuetify"],
+    entries: ["./src/**/*.{vue,js,jsx,ts,tsx}"],
+    // or include: ['vuetify'], ?
+  },
   /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
   resolve: {
     extensions: [

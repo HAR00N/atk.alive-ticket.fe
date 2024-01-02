@@ -133,7 +133,7 @@
                 <td>
                   <div class="d-flex">
                     <v-icon icon="mdi:mdi-new-box" style="color: #ff4d4d; margin-right: 3px" />
-                    <span class="ticket-title">{{ item.title }}</span>
+                    <span class="ticket-title" @click="goToDetail('1')">{{ item.title }}</span>
                     <div style="margin: 1px; margin-left: 5px !important">
                       <img width="15" height="15" src="/src/assets/images/urgent-red.png" />
                     </div>

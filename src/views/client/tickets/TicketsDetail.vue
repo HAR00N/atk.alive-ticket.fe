@@ -33,7 +33,7 @@
       </div>
       <div class="replyer-contents">
         <div class="reply-box">
-          <img class="box-hxd" src="@/assets/images/box.png" />
+<!--          <img class="box-hxd" src="@/assets/images/box.png" />-->
           <p class="repoerted-target">Alive-Ticket Maintanance</p>
           <p class="reported-title">reported 30 minutes ago</p>
           <p class="contents">
@@ -104,11 +104,11 @@
         </p>
       </div>
       <div class="insert-form">
-        <img class="user-4pR" src="@/assets/images/user-kjb.png" />
-        <div class="test-editor-area">
-<!--          <img class="polygon-2-MoX" src="@/assets/images/polygon-2.png" />-->
-          <div class="rectangle-15-WAd"></div>
-          <p class="text-editor-QWu">Text Editor</p>
+        <div>
+          <img class="user-4pR" src="@/assets/images/user-kjb.png" />
+        </div>
+        <div style="width: 100%">
+          <QuillEditor theme="snow" toolbar="full" />
         </div>
       </div>
       <div class="button-area">

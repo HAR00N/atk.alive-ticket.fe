@@ -35,14 +35,6 @@ const clientRoutes = [
         path: "/client/tickets",
         name: "tickets",
         component: function () {
-          return import("@/views/client/tickets/TicketsList.vue");
-        },
-        beforeEnter: beforeauth(true),
-      },
-      {
-        path: "/client/tickets2",
-        name: "tickets2",
-        component: function () {
           return import("@/views/client/tickets/TicketList_new.vue");
         },
         beforeEnter: beforeauth(true),

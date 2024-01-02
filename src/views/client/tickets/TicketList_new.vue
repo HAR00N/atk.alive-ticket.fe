@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex" style="width: 100%;">
+      <div class="d-flex" style="width: 100%">
         <div class="position-relative w-50 d-flex">
           <div class="filters-search-area">
             <div class="filters-search-area-inner">
@@ -42,7 +42,7 @@
               <input type="text" class="search-input" placeholder="write the title" />
             </div>
           </div>
-          <div class="filters-search-area" style="margin-left: 2rem;">
+          <div class="filters-search-area" style="margin-left: 2rem">
             <div class="filters-search-area-inner">
               <p class="search-title">Menu Path</p>
               <input type="text" class="search-input" placeholder="write the Menu Path" />
@@ -79,7 +79,7 @@
           color="#84D95E"
           size="large"
           prepend-icon
-          style="width: 10%; margin-right: 20px;"
+          style="width: 10%; margin-right: 20px"
         >
           <v-icon>mdi-restart</v-icon>
           Reset
@@ -117,120 +117,51 @@
           <v-table style="padding: 30px 15px 30px">
             <thead>
               <tr>
-                <th class="text-center" style="width: 100px;">
-                  Key
-                </th>
-                <th class="text-center" style="width: 150px;">
-                  Date
-                </th>
-                <th class="text-center" style="width: 30%;">
-                  Title
-                </th>
-                <th class="text-center" style="width: 300px;">
-                  Requester
-                </th>
-                <th class="text-center" style="width: 150px;">
-                  Division
-                </th>
-                <th class="text-center" style="width: 200px;">
-                  ETE
-                </th>
-                <th class="text-center" style="width: 150px;">
-                  Status
-                </th>
+                <th class="text-center" style="width: 100px">Key</th>
+                <th class="text-center" style="width: 150px">Date</th>
+                <th class="text-center" style="width: 30%">Title</th>
+                <th class="text-center" style="width: 300px">Requester</th>
+                <th class="text-center" style="width: 150px">Division</th>
+                <th class="text-center" style="width: 200px">ETE</th>
+                <th class="text-center" style="width: 150px">Status</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="text-center">#230005</td>
-                <td class="text-center">23-12-04</td>
+              <tr v-for="item in ticketList" :key="item.key">
+                <td class="text-center">{{ item.key }}</td>
+                <td class="text-center">{{ item.date }}</td>
                 <td>
                   <div class="d-flex">
-                    New Ticket Number 5 Urgent
-                    <div style="margin: 1px; margin-left: 5px !important;">
+                    <v-icon icon="mdi:mdi-new-box" style="color: #ff4d4d; margin-right: 3px" />
+                    <span class="ticket-title">{{ item.title }}</span>
+                    <div style="margin: 1px; margin-left: 5px !important">
                       <img width="15" height="15" src="/src/assets/images/urgent-red.png" />
                     </div>
-                    <div style="margin: 1px; margin-left: 5px !important;">
+                    <div style="margin: 1px; margin-left: 5px !important">
                       <img width="15" height="15" src="/src/assets/images/dev_gray.png" />
                     </div>
                   </div>
                 </td>
-                <td class="text-center">system Manager 1</td>
-                <td class="text-center">Error</td>
-                <td class="text-center">23-12-06</td>
                 <td class="text-center">
-                  <v-btn rounded="lg" variant="outlined" color="blue" style="background-color: #D6F8FA;">Receieved</v-btn>
+                  <v-icon icon="mdi:mdi-account-circle-outline" style="color: #84d95e; margin-right: 3px" />
+                  <span>{{ item.requester }}</span>
+                </td>
+                <td class="text-center">{{ item.division }}</td>
+                <td class="text-center">{{ item.ete }}</td>
+                <td class="text-center">
+                  <v-chip :id="item.status_class" variant="outlined" size="large" :class="`${item.status_class}`">
+                    <span style="line-height: 100%;">
+                      {{ item.status_class }}
+                      <br v-if="item.status == '4'" />
+                      <span style="color: #787070; font-size: small">{{ item.status == 4 ? item.deadline : "" }}</span>
+                    </span>
+                  </v-chip>
+                  <!--                  <v-btn rounded="lg" variant="outlined" color="blue" style="background-color: #D6F8FA;">{{ item.status }}</v-btn>-->
                 </td>
               </tr>
-              <tr>
-                <td class="text-center">#230005</td>
-                <td class="text-center">23-12-04</td>
-                <td>New Ticket Number 5 Urgent</td>
-                <td class="text-center">system Manager 1</td>
-                <td class="text-center">Error</td>
-                <td class="text-center">23-12-06</td>
-                <td class="text-center">
-                  <v-btn rounded="lg" variant="outlined" color="blue" style="background-color: #D6F8FA;">Receieved</v-btn>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">#230005</td>
-                <td class="text-center">23-12-04</td>
-                <td>New Ticket Number 5 Urgent</td>
-                <td class="text-center">system Manager 1</td>
-                <td class="text-center">Error</td>
-                <td class="text-center">23-12-06</td>
-                <td class="text-center">
-                  <v-btn rounded="lg" variant="outlined" color="blue" style="background-color: #D6F8FA;">Receieved</v-btn>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">#230005</td>
-                <td class="text-center">23-12-04</td>
-                <td>New Ticket Number 5 Urgent</td>
-                <td class="text-center">system Manager 1</td>
-                <td class="text-center">Error</td>
-                <td class="text-center">23-12-06</td>
-                <td class="text-center">
-                  <v-btn rounded="lg" variant="outlined" color="blue" style="background-color: #D6F8FA;">Receieved</v-btn>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">#230005</td>
-                <td class="text-center">23-12-04</td>
-                <td>New Ticket Number 5 Urgent</td>
-                <td class="text-center">system Manager 1</td>
-                <td class="text-center">Error</td>
-                <td class="text-center">23-12-06</td>
-                <td class="text-center">
-                  <v-btn rounded="lg" variant="outlined" color="blue" style="background-color: #D6F8FA;">Receieved</v-btn>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">#230005</td>
-                <td class="text-center">23-12-04</td>
-                <td>New Ticket Number 5 Urgent</td>
-                <td class="text-center">system Manager 1</td>
-                <td class="text-center">Error</td>
-                <td class="text-center">23-12-06</td>
-                <td class="text-center">
-                  <v-btn rounded="lg" variant="outlined" color="blue" style="background-color: #D6F8FA;">Receieved</v-btn>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center">#230005</td>
-                <td class="text-center">23-12-04</td>
-                <td>New Ticket Number 5 Urgent</td>
-                <td class="text-center">system Manager 1</td>
-                <td class="text-center">Error</td>
-                <td class="text-center">23-12-06</td>
-                <td class="text-center">
-                  <v-btn rounded="lg" variant="outlined" color="blue" style="background-color: #D6F8FA;">Receieved</v-btn>
-                </td>
-              </tr>
-
             </tbody>
           </v-table>
+          <pager :pass="pager"></pager>
         </div>
       </div>
     </v-container>
@@ -238,23 +169,170 @@
 </template>
 
 <script>
+import Pager from "@/components/pager.vue";
+import { code, getCodeValue } from "@/assets/js/code.js";
 export default {
   name: "TicketList2",
+  components: {
+    Pager,
+  },
   data: () => {
     return {
+      pager: {
+        model: {},
+        pageNo: 1,
+        pageNum: 1,
+        totalSize: 100,
+        rowSize: 10,
+        blockSize: 5,
+        endSize: 0,
+        list: [],
+        href: "javascript:void(0);",
+        callBack: function (n) {
+          this.model.getList(n);
+          //this.model.fnOnPostSearchList(n);
+        },
+      },
+
       title: "MAIN TITLE",
       date1: "",
       date2: "",
       checked: false,
       checked2: false,
+
+      code: code,
+
+      ticketList: [
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "1",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "2",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "2",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "3",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "3",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "4",
+          deadline: "2023-11-27",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "4",
+          deadline: "2023-11-27",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "5",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "99",
+        },
+        {
+          key: "#230005",
+          date: "23-12-04",
+          title: "New Ticket Number 5 Urgent",
+          requester: "system Manager 1",
+          division: "Error",
+          ete: "23-12-06",
+          status: "1",
+        },
+      ],
     };
   },
   computed: {},
+  created() {
+    let vm = this;
+    console.log("12345");
+    vm.getList(1);
+  },
   methods: {
+    getList(n) {
+      let vm = this;
+
+      ////// json 정의
+      ////// list api 실행
+
+      vm.pager.totalSize = 100;
+
+      for (let i in vm.ticketList) {
+        vm.ticketList[i].status_class = getCodeValue("ticket_status", vm.ticketList[i].status);
+      }
+
+      vm.pager.pageNum = vm.pager.pageNo * vm.pager.rowSize - vm.pager.rowSize;
+      vm.pager = Pager.methods.createPager(vm.pager, vm, "list");
+    },
     goToDetail(code) {
       let vm = this;
       vm.$routerPush(`/client/tickets/detail/${code}`);
     },
+    // getcodevalue(value, target) {
+    //   let item = this.code.find((content) => content.code_name == value);
+    //
+    //   if(item == null){
+    //     return "";
+    //   } else {
+    //     return item.code[target];
+    //   }
+    // },
   },
 };
 </script>

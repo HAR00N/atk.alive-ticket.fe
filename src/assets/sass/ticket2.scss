@@ -251,9 +251,45 @@ input[id="check2"]:checked + label::after {
 }
 .filters-content {
   width: 100%;
-  height: 40rem;
+  height: 45rem;
   position: relative;
   border: solid 0.1rem #84d95e;
   box-sizing: border-box;
   border-radius: 1rem;
 }
+
+.ticket-title:hover {
+  text-decoration: underline;
+  font-weight : bold;
+  cursor: pointer;
+}
+
+#received.v-chip.received {
+  background: #D6F8FA;
+  color: #59C2C9;
+}
+#progress.v-chip.progress{
+  background: #CDEBD1;
+  color: #1B5E20;
+}
+#upgrade.v-chip.upgrade {
+  background: #FDDFC9;
+  color: #FB9A55;
+}
+#deploy.v-chip.deploy {
+  background: #DCA4EF;
+  color: #A355BE;
+}
+#deploy.v-chip.v-chip__content span {
+  line-height: 80%;
+  display: block !important;
+}
+#complete.v-chip.complete{
+  background: #EFF8F0;
+  color: #84D95E;
+}
+#cancel.v-chip.cancel {
+  background: #FAD6D6;
+  color: #D36767;
+}
+

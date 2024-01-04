@@ -292,4 +292,8 @@ input[id="check2"]:checked + label::after {
   background: #FAD6D6;
   color: #D36767;
 }
+.v-chip.fix-area {
+  width: 100px;
+  justify-content: center;
+}
 

@@ -19,6 +19,10 @@ const beforeauth = (isAuth) => (from, to, next) => {
 
 const clientRoutes = [
   {
+    path: "/",
+    redirect: "/client/home",
+  },
+  {
     path: "/client",
     name: "client",
     redirect: "/client/home",

@@ -149,7 +149,12 @@
                 <td class="text-center">{{ item.division }}</td>
                 <td class="text-center">{{ item.ete }}</td>
                 <td class="text-center">
-                  <v-chip :id="item.status_class" variant="outlined" size="large" :class="`${item.status_class}`">
+                  <v-chip
+                    :id="item.status_class"
+                    variant="outlined"
+                    size="large"
+                    :class="`${item.status_class} fix-area`"
+                  >
                     <span style="line-height: 100%;">
                       {{ item.status_class }}
                       <br v-if="item.status == '4'" />

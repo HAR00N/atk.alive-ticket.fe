@@ -5,7 +5,8 @@
         <div class="position-relative w-50 d-flex">
           <div class="position-relative w-75 px-5 py-3">
             <p class="date">Date</p>
-            <VueDatePicker v-model="date1" placeholder="startDate"></VueDatePicker>
+<!--            <VueDatePicker v-model="date1" placeholder="startDate"></VueDatePicker>-->
+            <VDataInput></VDataInput>
           </div>
           <div class="position-relative between-dash">
             <span>~</span>
@@ -130,8 +131,8 @@
               <tr v-for="item in ticketList" :key="item.key">
                 <td class="text-center">{{ item.key }}</td>
                 <td class="text-center">{{ item.date }}</td>
-                <td>
-                  <div class="d-flex">
+                <td class="table-title">
+                  <div class="d-flex table-title">
                     <v-icon icon="mdi:mdi-new-box" style="color: #ff4d4d; margin-right: 3px" />
                     <span class="ticket-title" @click="goToDetail('1')">{{ item.title }}</span>
                     <div style="margin: 1px; margin-left: 5px !important">
@@ -175,11 +176,13 @@
 
 <script>
 import Pager from "@/components/pager.vue";
+import VDataInput from "@/components/VDateInput.vue"
 import { code, getCodeValue } from "@/assets/js/code.js";
 export default {
   name: "TicketList2",
   components: {
     Pager,
+    VDataInput,
   },
   data: () => {
     return {
@@ -211,7 +214,7 @@ export default {
         {
           key: "#230005",
           date: "23-12-04",
-          title: "New Ticket Number 5 Urgent",
+          title: "New Ticket Number 5 UrgentUrgentUrgentUrgentUrgentUrgentUrgentUrgentUrgentUrgentUrgentUrgent",
           requester: "system Manager 1",
           division: "Error",
           ete: "23-12-06",

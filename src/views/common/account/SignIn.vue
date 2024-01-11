@@ -169,6 +169,10 @@ export default {
         alert("동의사항에 전부 체크하지 않으셨습니다.");
       }
     },
+
+    validatePW(){
+
+    },
   },
 };
 </script>

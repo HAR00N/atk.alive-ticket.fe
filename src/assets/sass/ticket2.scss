@@ -258,11 +258,6 @@ input[id="check2"]:checked + label::after {
   border-radius: 1rem;
 }
 
-.ticket-title:hover {
-  text-decoration: underline;
-  font-weight : bold;
-  cursor: pointer;
-}
 
 #received.v-chip.received {
   background: #D6F8FA;
@@ -296,4 +291,56 @@ input[id="check2"]:checked + label::after {
   width: 100px;
   justify-content: center;
 }
+
+@media (max-width: 1080px) {
+  .ticket-title {
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+
+    table-layout: fixed;
+  }
+
+  .ticket-title:hover {
+    width: 100%;
+    text-decoration: underline;
+    font-weight : bold;
+    cursor: pointer;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
+}
+@media (min-width: 1081px) {
+  .ticket-title {
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+
+    table-layout: fixed;
+  }
+
+  .ticket-title:hover {
+    width: 100%;
+    text-decoration: underline;
+    font-weight : bold;
+    cursor: pointer;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
+}
+
+
+
 

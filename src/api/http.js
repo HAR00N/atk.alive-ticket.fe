@@ -32,3 +32,5 @@ instance.interceptors.response.use(
     return await Promise.reject(error);
   }
 );
+
+export default instance;

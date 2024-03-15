@@ -2,8 +2,8 @@
   <v-menu transition="slide-y-transition" min-width="0" scrim :close-on-content-click="false" v-model="menu">
     <template v-slot:activator="{ props }">
       <v-text-field
-        density="compact"
         hide-details
+        solo
         prepend-inner-icon="mdi-calendar-month"
         variant="outlined"
         v-bind="props"
@@ -11,6 +11,7 @@
         :disabled="disabled"
         :placeholder="placeholder"
         v-model="formatted"
+        class="date-input rounded-lg"
       ></v-text-field>
     </template>
     <v-list class="pa-0">
@@ -45,3 +46,18 @@ const changeDatePicker = () => {
   model.value = selDate.value;
 };
 </script>
+
+<style scoped>
+.date-input{
+  color: black;
+  /*border: solid 0.3rem #000000;*/
+  /*border-radius: 1rem;*/
+}
+.date-input.v-input .v-input__slot {
+  border-radius: 1rem;
+}
+input.v-field__input {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+</style>

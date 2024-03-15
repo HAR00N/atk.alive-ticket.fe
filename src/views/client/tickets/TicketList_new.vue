@@ -6,14 +6,15 @@
           <div class="position-relative w-75 px-5 py-3">
             <p class="date">Date</p>
 <!--            <VueDatePicker v-model="date1" placeholder="startDate"></VueDatePicker>-->
-            <VDataInput></VDataInput>
+            <VDataInput v-model="date1" :placeholder="'startDate'"></VDataInput>
           </div>
           <div class="position-relative between-dash">
             <span>~</span>
           </div>
           <div class="position-relative w-75 px-5 py-3">
             <p class="date">Date2</p>
-            <VueDatePicker v-model="date2" placeholder="endDate"></VueDatePicker>
+<!--            <VueDatePicker v-model="date2" placeholder="endDate"></VueDatePicker>-->
+            <VDataInput v-model="date2" :placeholder="'endDate'"></VDataInput>
           </div>
         </div>
         <div class="position-relative w-50 d-flex">
@@ -98,7 +99,7 @@
         </v-btn>
       </div>
     </v-card>
-    <v-container class="d-block w-100 h-100">
+    <div class="d-block w-100 h-100" style="padding: 20px 100px">
       <div class="d-block w-100">
         <div class="d-flex justify-space-between">
           <p class="tickets-Gid">Tickets</p>
@@ -170,7 +171,7 @@
           <pager :pass="pager"></pager>
         </div>
       </div>
-    </v-container>
+    </div>
   </div>
 </template>
 
@@ -307,6 +308,11 @@ export default {
     };
   },
   computed: {},
+  watch: {
+    date1(newdata) {
+      console.log(newdata);
+    },
+  },
   created() {
     let vm = this;
     console.log("12345");
